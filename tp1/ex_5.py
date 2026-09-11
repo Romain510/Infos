@@ -5,8 +5,6 @@ while q>0:
     resteStr=str(reste)
     resultat+=resteStr
     q=q//2
-    print(q, reste)
-
-
+    
 
 print(resultat)
