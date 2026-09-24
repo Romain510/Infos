@@ -16,5 +16,3 @@ if __name__ == "__main__":
     uni_data = get_university_data("France")
     print(uni_data)
 
-for universite in uni_data:
-    if universite.lower
