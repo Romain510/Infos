@@ -1,7 +1,8 @@
 class AirPlane:
-    def __init__(self, nom=""):
+    def __init__(self, status="ground", nom=""):
         self.nom=nom
         self.fly=False
+        self.status=status
 
     def take_off(fly):
         return fly==True
@@ -21,8 +22,10 @@ class MilitaryAircraft(AirPlane):
     def __init__(self, nom="military airplane", mission="Pas de mission"):
         self.nom=nom
         self.mission=mission
+        super().__init__()
     
     def __str__(self):
+        if self.fly
         return f"{self.nom}{self.mission}"
 
 class CargoAircraft(AirPlane):
@@ -31,6 +34,7 @@ class CargoAircraft(AirPlane):
         self.shipment=shipment
     
     def __str__(self):
+        
         return f"{self.nom}{self.shipment}"
 
 class CivilAircraft(AirPlane):
@@ -41,7 +45,19 @@ class CivilAircraft(AirPlane):
     def __str__(self):
         return f"{self.nom}{self.nb_passager}"
 
+class Airplane:
+    def __init__(self, plane=""):
+        self.plane=plane
 
+    def add_military():
+        return MilitaryAircraft()
+    def add_cargo():
+        return CargoAircraft()
+    def add_civil():
+        return CivilAircraft
+
+    def __str__ (self):
+        pass
 
 if __name__=="__main__":
     etat=AirPlane("Airbus A380")
